@@ -4,48 +4,41 @@
    Case Problem 1
 
    Sudoku Puzzle Table Style Sheet
-   Author: 
-   Date:   
+   Author: Vito Clare
+   Date:   10/09/2025
 
    Filename:         stable.css
    Supporting Files: green.jpg, gold.jpg
 
 */
-
-table.spuzzle, table.subTable {
-border-collapse: collapse;
+table.spuzzle {
+	border-collapse: collapse;
 }
-
 table.spuzzle td {
-border: 5px solid gray;
+	border: 5px outset gray;
 }
-
-
 table.spuzzle th {
-font-size: 8px;
-color: gray;
+	font-size: 8px;
+	color: gray;
 }
-
 table.spuzzle tbody th {
-height: 40px;
+	height:40px;
 }
-
+table.subTable {
+	border-collapse: collapse;
+}
 table.subTable td {
-font-size: 20px;
+border: 1px solid black;
 color: blue;
-width: 40px;
+font-size: 20px;
 height: 40px;
 text-align: center;
 vertical-align: middle;
-border: 1px solid black;
+width: 40px;
 }
-
-td.goldBox {
-background: url("gold.jpg") no-repeat center center;
-background-size: contain;
+table.spuzzle td.goldBox td {
+	background: url(gold.jpg) no-repeat 50% 50%;
 }
-
-td.greenBox {
-background: url("green.jpg") no-repeat center center;
-background-size: contain;
+table.spuzzle td.greenBox td {
+	background: url(green.jpg) no-repeat 50% 50%;
 }

@@ -109,9 +109,94 @@ text-decoration: underline;
 <p>Here's a link to my school's website:
 <a href="https://valenciacollege.edu">Valencia College</a>
 </p>
+		   <h2 style="text-align:center;">User Input Form Assignment</h2>
+
+<form action="#" method="post" enctype="multipart/form-data">
+  <table class="form-table">
+    <tr>
+      <th colspan="2">
+        <img src="https://valenciacollege.edu/_resources/img/valencia-college-logo.svg" alt="Valencia College Logo" class="logo">
+        <br>User Input Form
+      </th>
+    </tr>
+
+    <tr>
+      <td><label for="fname">First Name:</label></td>
+      <td><input type="text" id="fname" name="fname" required></td>
+    </tr>
+
+    <tr>
+      <td><label for="lname">Last Name:</label></td>
+      <td><input type="text" id="lname" name="lname" required></td>
+    </tr>
+
+    <tr>
+      <td>Gender:</td>
+      <td>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Choose Colors:</td>
+      <td>
+        <input type="checkbox" id="red" name="color" value="Red">
+        <label for="red">Red</label><br>
+        <input type="checkbox" id="white" name="color" value="White">
+        <label for="white">White</label><br>
+        <input type="checkbox" id="blue" name="color" value="Blue">
+        <label for="blue">Blue</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="sports">Favorite Sport:</label></td>
+      <td>
+        <select id="sports" name="sports">
+          <option value="">--Select a Sport--</option>
+          <option>Basketball</option>
+          <option>Soccer</option>
+          <option>Baseball</option>
+          <option>Football</option>
+          <option>Tennis</option>
+          <option>Volleyball</option>
+          <option>Hockey</option>
+          <option>Golf</option>
+          <option>Track & Field</option>
+          <option>Swimming</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="essay">Write About Global Warming:</label></td>
+      <td><textarea id="essay" name="essay" rows="20" cols="50"></textarea></td>
+    </tr>
+
+    <tr>
+      <td><label for="password">Password:</label></td>
+      <td><input type="password" id="password" name="password" maxlength="10" required></td>
+    </tr>
+
+    <tr>
+      <td><label for="file">Select a File:</label></td>
+      <td><input type="file" id="file" name="file"></td>
+    </tr>
+
+    <tr>
+      <td colspan="2" style="text-align:center;">
+        <input type="submit" value="Submit Form" class="submit-btn">
+      </td>
+    </tr>
+  </table>
+</form>
    </body>
 
 </html>
+
 
 
 

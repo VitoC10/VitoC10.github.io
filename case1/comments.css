@@ -1,0 +1,75 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 6
+   Case Problem 1
+
+   Comment Form Style Sheet
+   Author: Vito Clare
+   Date:   10/18/2025
+
+   Filename:         comments.css
+   Supporting Files: go.png, stop.png
+
+*/
+fieldset {
+   background-color: rgb(245, 245, 255);
+   margin: 15px auto;
+   padding: 5px;
+   width: 90%;
+}
+
+label {
+   display: block;
+   float: left;
+   clear: left;
+   font-size: 0.9em;
+   width: 100%;
+   margin: 5px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+   display: block;
+   float: right;
+   font-size: 0.9em;
+   width: 55%;
+   margin: 0 10px;
+}
+
+textarea {
+   height: 150px;
+}
+
+input[type="submit"] {
+   display: block;
+   clear: both;
+   width: 200px;
+   height: 30px;
+   margin: 5px auto;
+}
+
+
+input:focus,
+textarea:focus {
+   background-color: rgb(225, 225, 240);
+}
+
+
+input:focus:valid {
+   background-color: rgb(225, 240, 225);
+   background-image: url("go.png");
+   background-repeat: no-repeat;
+   background-position: right bottom;
+   background-size: contain;
+}
+
+
+input:focus:invalid {
+   background-color: rgb(240, 225, 225);
+   background-image: url("stop.png");
+   background-repeat: no-repeat;
+   background-position: right bottom;
+   background-size: contain;
+}

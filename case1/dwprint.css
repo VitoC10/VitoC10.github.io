@@ -1,0 +1,77 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Case Problem 1
+
+   dessertWeb Print Styles
+   Author: Vito Clare
+   Date:   10/30/2025
+
+   Filename:         dwprint.css
+   Supporting Files: 
+
+*/
+@page {
+  size: 8.5in 11in;
+  margin: 0.5in;
+}
+
+header,
+#left,
+#right,
+aside,
+footer,
+header nav,
+.headinggroup h2,
+article p:last-of-type {
+  display: none !important;
+}
+
+body {
+  background: white;
+  color: black;
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 0;
+}
+
+#center {
+  float: none !important;
+  width: 100% !important;
+}
+
+h1 {
+  font-size: 200%;
+  margin-bottom: 0.2in;
+}
+
+h2 {
+  font-size: 150%;
+  margin-top: 0.5in;
+}
+
+li {
+  line-height: 1.5em;
+}
+
+ol {
+  margin-left: 0.5in;
+  list-style-type: decimal;
+}
+
+h2:nth-of-type(2) {
+  page-break-before: always;
+}
+
+#dishimg {
+  display: block;
+  margin: 0 auto 0.3in auto;
+  float: none !important;
+}
+
+p, ul, ol {
+  font-size: 14pt;
+  line-height: 1.4;
+}
+
+
+

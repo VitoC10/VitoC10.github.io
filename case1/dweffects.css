@@ -1,0 +1,50 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Case Problem 1
+   Special Effects style sheet
+   Author: Vito Clare
+   Date:   10/30/2025
+
+   Filename:         dweffects.css
+   Supporting Files: 
+
+*/
+
+body {
+  box-shadow:
+    10px 0px 15px rgba(211, 211, 211, 0.5),
+    -10px 0px 15px rgba(211, 211, 211, 0.5);
+}
+header nav li {
+  background-color: rgb(224, 238, 238);
+  border-radius: 10px;
+
+  box-shadow:
+    inset 3px 3px 2px rgba(255, 255, 255, 1),
+    inset -5px -5px 5px rgb(147, 207, 207);
+}
+article {
+  box-shadow:
+    inset 15px 15px 75px rgb(171, 171, 171),
+    5px 5px 5px rgb(101, 101, 101);
+}
+blockquote {
+  background: linear-gradient(to right,
+      rgb(166, 230, 230) 0%,
+      rgb(231, 231, 231) 5%,
+      rgb(255, 255, 255) 15%
+  );
+  
+  background: -webkit-gradient(linear, left top, right top,
+      color-stop(0, rgb(166, 230, 230)),
+      color-stop(0.33, rgb(231, 231, 231)),
+      color-stop(1, rgb(255, 255, 255))
+  );
+   filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr='#DEF4F4',
+      endColorstr='#FFFFFF',
+      GradientType=1
+  );
+}
+

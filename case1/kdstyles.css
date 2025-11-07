@@ -1,0 +1,39 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 9
+   Case Problem 1
+
+   Kelsey's Diner Style Sheet
+
+   Author:   Vito Clare
+   Date:      
+
+   Filename:         kdstyles.css
+   Supporting Files: 
+
+*/
+body {
+  background: url("tan.jpg") repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+img { border: 0; }
+
+.center { text-align: center; }
+
+.green { color: green; }
+
+h1 { font-size: 1.8em; }
+
+h5 { font-size: 1em; }
+
+hr { border: 1px solid #999; }
+
+.dish {
+  font-weight: bold;
+  font-family: sans-serif;
+  color: green;
+}
+
+

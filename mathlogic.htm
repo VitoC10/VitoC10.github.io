@@ -84,7 +84,11 @@
 
   <div class="container">
     <h1> Math Logic</h1>
-    <p>Enter two numbers below and see the results! :</p>
+    <p>Enter two numbers below and see their :
+    Sum
+    Product
+    Greater than Value
+    </p>
 
     <label for="num1">First Number (x):</label>
     <input type="number" id="num1" placeholder="Enter number 1" />
@@ -118,8 +122,7 @@
         comparison = y + " is greater than " + x + ".";
       } else {
         comparison = "Both numbers are equal.";
-      }
-
+   
       output.innerHTML = `
          The sum of ${x} and ${y} is <strong>${sum}</strong>.<br>
         The product of ${x} and ${y} is <strong>${product}</strong>.<br>
@@ -130,4 +133,5 @@
 
 </body>
 </html>
+
 

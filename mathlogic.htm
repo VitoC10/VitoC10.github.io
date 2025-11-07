@@ -100,7 +100,7 @@
     <div class="output" id="output"></div>
   </div>
 
-  <script>
+ <script>
     function calculate() {
       var x = parseFloat(document.getElementById("num1").value);
       var y = parseFloat(document.getElementById("num2").value);
@@ -116,12 +116,13 @@
       var comparison = "";
 
       if (x > y) {
-        comparison = x + " is greater than " + y + ".";
+        comparison = x + " is bigger than " + y + ".";
       } else if (y > x) {
-        comparison = y + " is greater than " + x + ".";
+        comparison = y + " is bigger than " + x + ".";
       } else {
         comparison = "Both numbers are equal.";
-   
+      }
+
       output.innerHTML = `
          The sum of ${x} and ${y} is <strong>${sum}</strong>.<br>
         The product of ${x} and ${y} is <strong>${product}</strong>.<br>
@@ -129,9 +130,9 @@
       `;
     }
   </script>
-
 </body>
 </html>
+
 
 
 
